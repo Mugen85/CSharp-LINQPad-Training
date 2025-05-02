@@ -1,22 +1,5 @@
 <Query Kind="Program" />
 
-/*
-✅ Obiettivo  
-Capire cosa sono una classe, un oggetto e un metodo.  
-Creare un oggetto da una classe e usarne un metodo tramite il punto (`.`).
-
-💡 Concetti  
-- class → definisce un nuovo tipo (modello)  
-- new → crea un oggetto (istanza) di una classe  
-- metodo → azione definita dentro una classe  
-- punto `.` → serve per accedere a metodi e proprietà
-
-🧠 Focus tecnico  
-Tutto in C# gira intorno alle **classi** e agli **oggetti**.  
-Con `new` creiamo un oggetto reale da una classe.  
-Con `.` possiamo usare le sue azioni (metodi) o leggere/scrivere i suoi dati (proprietà).
-*/
-
 void Main()
 {
 	// Creazione di un oggetto reale (istanza) a partire dalla classe Auto

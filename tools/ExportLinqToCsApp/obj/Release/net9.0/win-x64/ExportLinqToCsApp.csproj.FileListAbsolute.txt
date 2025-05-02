@@ -1,0 +1,15 @@
+C:\Users\doppi\OneDrive\Documenti\GitHub\CSharp-LINQPad-Training\tools\ExportLinqToCsApp\bin\Release\net9.0\win-x64\ExportLinqToCsApp.exe
+C:\Users\doppi\OneDrive\Documenti\GitHub\CSharp-LINQPad-Training\tools\ExportLinqToCsApp\bin\Release\net9.0\win-x64\ExportLinqToCsApp.deps.json
+C:\Users\doppi\OneDrive\Documenti\GitHub\CSharp-LINQPad-Training\tools\ExportLinqToCsApp\bin\Release\net9.0\win-x64\ExportLinqToCsApp.runtimeconfig.json
+C:\Users\doppi\OneDrive\Documenti\GitHub\CSharp-LINQPad-Training\tools\ExportLinqToCsApp\bin\Release\net9.0\win-x64\ExportLinqToCsApp.dll
+C:\Users\doppi\OneDrive\Documenti\GitHub\CSharp-LINQPad-Training\tools\ExportLinqToCsApp\bin\Release\net9.0\win-x64\ExportLinqToCsApp.pdb
+C:\Users\doppi\OneDrive\Documenti\GitHub\CSharp-LINQPad-Training\tools\ExportLinqToCsApp\obj\Release\net9.0\win-x64\ExportLinqToCsApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\doppi\OneDrive\Documenti\GitHub\CSharp-LINQPad-Training\tools\ExportLinqToCsApp\obj\Release\net9.0\win-x64\ExportLinqToCsApp.AssemblyInfoInputs.cache
+C:\Users\doppi\OneDrive\Documenti\GitHub\CSharp-LINQPad-Training\tools\ExportLinqToCsApp\obj\Release\net9.0\win-x64\ExportLinqToCsApp.AssemblyInfo.cs
+C:\Users\doppi\OneDrive\Documenti\GitHub\CSharp-LINQPad-Training\tools\ExportLinqToCsApp\obj\Release\net9.0\win-x64\ExportLinqToCsApp.csproj.CoreCompileInputs.cache
+C:\Users\doppi\OneDrive\Documenti\GitHub\CSharp-LINQPad-Training\tools\ExportLinqToCsApp\obj\Release\net9.0\win-x64\ExportLinqToCsApp.sourcelink.json
+C:\Users\doppi\OneDrive\Documenti\GitHub\CSharp-LINQPad-Training\tools\ExportLinqToCsApp\obj\Release\net9.0\win-x64\ExportLinqToCsApp.dll
+C:\Users\doppi\OneDrive\Documenti\GitHub\CSharp-LINQPad-Training\tools\ExportLinqToCsApp\obj\Release\net9.0\win-x64\refint\ExportLinqToCsApp.dll
+C:\Users\doppi\OneDrive\Documenti\GitHub\CSharp-LINQPad-Training\tools\ExportLinqToCsApp\obj\Release\net9.0\win-x64\ExportLinqToCsApp.pdb
+C:\Users\doppi\OneDrive\Documenti\GitHub\CSharp-LINQPad-Training\tools\ExportLinqToCsApp\obj\Release\net9.0\win-x64\ExportLinqToCsApp.genruntimeconfig.cache
+C:\Users\doppi\OneDrive\Documenti\GitHub\CSharp-LINQPad-Training\tools\ExportLinqToCsApp\obj\Release\net9.0\win-x64\ref\ExportLinqToCsApp.dll

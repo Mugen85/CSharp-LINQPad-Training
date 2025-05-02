@@ -1,0 +1,5 @@
+C:\Users\doppi\OneDrive\Documenti\GitHub\CSharp-LINQPad-Training\tools\ExportLinqToCsApp\bin\Release\net9.0\win-x64\publish\ExportLinqToCsApp.exe
+C:\Users\doppi\OneDrive\Documenti\GitHub\CSharp-LINQPad-Training\tools\ExportLinqToCsApp\bin\Release\net9.0\win-x64\publish\ExportLinqToCsApp.dll
+C:\Users\doppi\OneDrive\Documenti\GitHub\CSharp-LINQPad-Training\tools\ExportLinqToCsApp\bin\Release\net9.0\win-x64\publish\ExportLinqToCsApp.deps.json
+C:\Users\doppi\OneDrive\Documenti\GitHub\CSharp-LINQPad-Training\tools\ExportLinqToCsApp\bin\Release\net9.0\win-x64\publish\ExportLinqToCsApp.runtimeconfig.json
+C:\Users\doppi\OneDrive\Documenti\GitHub\CSharp-LINQPad-Training\tools\ExportLinqToCsApp\bin\Release\net9.0\win-x64\publish\ExportLinqToCsApp.pdb
