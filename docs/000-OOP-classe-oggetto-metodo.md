@@ -60,3 +60,65 @@ class Auto
         Console.WriteLine($"L'auto {Modello} ha avviato il motore.");
     }
 }
+```
+
+# 000 – OOP: class, object and method  
+🔼 Italian version above
+
+---
+
+## ✅ Goal
+
+Understand the relationship between class and object through a concrete example:  
+creating a real object from a class, assigning a property, and calling a method.
+
+---
+
+## 💡 Concepts
+
+- `class` → defines a custom type
+- `new` → creates an actual instance of that class
+- public property (`Modello`) → stores data related to the object
+- public method (`AvviaMotore`) → performs an action
+- dot operator (`.`) → accesses object members (properties and methods)
+
+---
+
+## 🧠 Technical focus
+
+- Understand the **difference between class and object**
+- Use the **implicit constructor** to create an instance
+- Assign a value to a public property
+- Call a method via the object
+- Learn the purpose of the **dot operator (`.`)**
+
+---
+
+## 📄 Code
+
+```csharp
+void Main()
+{
+	// Creating a real object (instance) from the Auto class
+	var myCar = new Auto();
+	
+	// Assign a value to the "Modello" property of the object
+	myCar.Modello = "Fiat Panda";
+	
+	// Call the "AvviaMotore" method of the object using the dot operator
+	myCar.AvviaMotore();
+}
+
+// Definition of the Auto class
+class Auto
+{
+	// Property: a string that represents the car model
+	public string Modello;
+
+	// Method: prints a message using the property
+	public void AvviaMotore()
+	{
+		Console.WriteLine($"The car {Modello} has started the engine.");
+	}
+}
+
