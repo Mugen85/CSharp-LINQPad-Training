@@ -1,0 +1,7 @@
+/github-view/*.cs
+/conversione.log
+*.tmp
+*.bak
+.vscode/
+bin/
+obj/
