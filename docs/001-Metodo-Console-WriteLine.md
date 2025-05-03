@@ -35,3 +35,41 @@ void Main()
 {
     Console.WriteLine("Benvenuto nel mio primo programma!");
 }
+```
+# 001 – Console.WriteLine method  
+🔼 Italian version above
+
+---
+
+## ✅ Goal
+
+Understand how the `Console.WriteLine` method works, which allows printing messages to the application console.  
+It is one of the fundamental tools for communicating with the user and for debugging.
+
+---
+
+## 💡 Concepts
+
+- `Console` → static class in the .NET framework for console input/output  
+- `WriteLine()` → method that prints a string followed by a newline  
+- quoted string → literal text to be displayed  
+- semicolon (`;`) → required at the end of the statement  
+
+---
+
+## 🧠 Technical focus
+
+- Calling a static method using the class name (`Console`)  
+- Understanding the difference between `WriteLine()` and `Write()`  
+- Introduction to console output  
+- Attention to correct syntax: parentheses and semicolon  
+
+---
+
+## 📄 Code
+
+```csharp
+void Main()
+{
+    Console.WriteLine("Welcome to my first program!");
+}
