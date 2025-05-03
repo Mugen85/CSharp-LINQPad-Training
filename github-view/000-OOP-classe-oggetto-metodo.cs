@@ -1,7 +1,7 @@
 ﻿// ⚠️ ATTENZIONE: questo file è stato generato automaticamente
 // Non modificarlo manualmente: verrà sovrascritto ad ogni esecuzione.
 // File sorgente: 000-OOP-classe-oggetto-metodo.linq
-// Data generazione: 2025-05-02 11:43:59
+// Data generazione: 2025-05-03 08:24:26
 
 <Query Kind="Program" />
 
