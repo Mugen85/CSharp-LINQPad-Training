@@ -1,9 +1,7 @@
-﻿namespace GeneratedSnippets
-{
-    // ⚠️ ATTENZIONE: questo file è stato generato automaticamente
+﻿    // ⚠️ ATTENZIONE: questo file è stato generato automaticamente
     // Non modificarlo manualmente: verrà sovrascritto ad ogni esecuzione.
     // File sorgente: 001-Metodo-Console-WriteLine.linq
-    // Data generazione: 2025-05-04 09:14:03
+    // Data generazione: 2025-05-04 09:22:25
 namespace GeneratedSnippets
 {
     public class 001_Metodo_Console_WriteLine
@@ -13,7 +11,7 @@ namespace GeneratedSnippets
             
             void Main()
             {
-            	Console.WriteLine("Ciao, mi chiamo Marco!");
+            Console.WriteLine("Ciao, mi chiamo Marco!");
             }
             
         }

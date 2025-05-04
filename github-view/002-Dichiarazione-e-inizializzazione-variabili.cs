@@ -1,9 +1,7 @@
-﻿namespace GeneratedSnippets
-{
-    // ⚠️ ATTENZIONE: questo file è stato generato automaticamente
+﻿    // ⚠️ ATTENZIONE: questo file è stato generato automaticamente
     // Non modificarlo manualmente: verrà sovrascritto ad ogni esecuzione.
     // File sorgente: 002-Dichiarazione-e-inizializzazione-variabili.linq
-    // Data generazione: 2025-05-04 09:14:03
+    // Data generazione: 2025-05-04 09:22:25
 namespace GeneratedSnippets
 {
     public class 002_Dichiarazione_e_inizializzazione_variabili

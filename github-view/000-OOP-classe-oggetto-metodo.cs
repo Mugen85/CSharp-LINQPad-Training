@@ -1,9 +1,7 @@
-﻿namespace GeneratedSnippets
-{
-    // ⚠️ ATTENZIONE: questo file è stato generato automaticamente
+﻿    // ⚠️ ATTENZIONE: questo file è stato generato automaticamente
     // Non modificarlo manualmente: verrà sovrascritto ad ogni esecuzione.
     // File sorgente: 000-OOP-classe-oggetto-metodo.linq
-    // Data generazione: 2025-05-04 09:14:03
+    // Data generazione: 2025-05-04 09:22:25
 namespace GeneratedSnippets
 {
     public class 000_OOP_classe_oggetto_metodo
@@ -13,27 +11,27 @@ namespace GeneratedSnippets
             
             void Main()
             {
-            	// Creazione di un oggetto reale (istanza) a partire dalla classe Auto
-            	var miaAuto = new Auto();
-            	
-            	// Assegno un valore alla proprietà "Modello" dell'oggetto
-            	miaAuto.Modello = "Fiat Panda";
-            	
-            	// Chiamo il metodo "AvviaMotore" dell'oggetto usando il punto
-            	miaAuto.AvviaMotore();
+            // Creazione di un oggetto reale (istanza) a partire dalla classe Auto
+            var miaAuto = new Auto();
+            
+            // Assegno un valore alla proprietà "Modello" dell'oggetto
+            miaAuto.Modello = "Fiat Panda";
+            
+            // Chiamo il metodo "AvviaMotore" dell'oggetto usando il punto
+            miaAuto.AvviaMotore();
             }
             
             // Definizione della classe Auto
             class Auto
             {
-            	// Proprietà: una stringa che rappresenta il modello dell'auto
-            	public string Modello;
+            // Proprietà: una stringa che rappresenta il modello dell'auto
+            public string Modello;
             
-            	// Metodo: stampa una frase usando la proprietà
-            	public void AvviaMotore()
-            	{
-            		Console.WriteLine($"L'auto {Modello} ha avviato il motore.");
-            	}
+            // Metodo: stampa una frase usando la proprietà
+            public void AvviaMotore()
+            {
+            Console.WriteLine($"L'auto {Modello} ha avviato il motore.");
+            }
             }
             
             // 1. class Auto

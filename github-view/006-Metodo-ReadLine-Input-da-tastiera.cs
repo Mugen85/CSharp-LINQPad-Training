@@ -1,9 +1,7 @@
-﻿namespace GeneratedSnippets
-{
-    // ⚠️ ATTENZIONE: questo file è stato generato automaticamente
+﻿    // ⚠️ ATTENZIONE: questo file è stato generato automaticamente
     // Non modificarlo manualmente: verrà sovrascritto ad ogni esecuzione.
     // File sorgente: 006-Metodo-ReadLine-Input-da-tastiera.linq
-    // Data generazione: 2025-05-04 09:14:03
+    // Data generazione: 2025-05-04 09:22:25
 namespace GeneratedSnippets
 {
     public class 006_Metodo_ReadLine_Input_da_tastiera
@@ -12,19 +10,19 @@ namespace GeneratedSnippets
         {
             
             void Main()
-            {	
-            	// Mostro un messaggio per chiedere il nome all'utente
-            	Console.Write("Come ti chiami? ");
-            	
-            	// Leggo il nome inserito da tastiera
-            	string nome = Console.ReadLine();
-            	
-            	//Metodo più vecchio, ma utilizzabile
-            	//Console.WriteLine("Piacere di conoscerti, " + nome + "!");
-            	
-            	// Saluto usando l'interpolazione di stringa
-            	Console.WriteLine($"Piacere di conoscerti, {nome}!");	
-            	
+            {
+            // Mostro un messaggio per chiedere il nome all'utente
+            Console.Write("Come ti chiami? ");
+            
+            // Leggo il nome inserito da tastiera
+            string nome = Console.ReadLine();
+            
+            //Metodo più vecchio, ma utilizzabile
+            //Console.WriteLine("Piacere di conoscerti, " + nome + "!");
+            
+            // Saluto usando l'interpolazione di stringa
+            Console.WriteLine($"Piacere di conoscerti, {nome}!");
+            
             }
             
         }

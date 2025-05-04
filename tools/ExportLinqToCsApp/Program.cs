@@ -47,14 +47,10 @@ namespace ExportLinqToCsApp
 					string[] lines = File.ReadAllLines(file);
 
 					var builder = new StringBuilder();
-					builder.AppendLine("namespace GeneratedSnippets");
-					builder.AppendLine("{");
 					builder.AppendLine($"    // ⚠️ ATTENZIONE: questo file è stato generato automaticamente");
 					builder.AppendLine($"    // Non modificarlo manualmente: verrà sovrascritto ad ogni esecuzione.");
 					builder.AppendLine($"    // File sorgente: {fileName}");
 					builder.AppendLine($"    // Data generazione: {timestamp}");
-
-					// Aggiunta della struttura C# formattata
 					builder.AppendLine("namespace GeneratedSnippets");
 					builder.AppendLine("{");
 
@@ -79,7 +75,7 @@ namespace ExportLinqToCsApp
 						}
 
 						// Se la riga è valida, la scriviamo con l’indentazione corretta
-						builder.AppendLine("            " + line);
+						builder.AppendLine("            " + cleanLine);
 					}
 
 					// Chiusura blocchi
