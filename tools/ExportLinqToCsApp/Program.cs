@@ -66,7 +66,10 @@ namespace ExportLinqToCsApp
 					// Inserimento del contenuto originale indentato
 					foreach (var line in lines)
 					{
-						builder.AppendLine("            " + line);
+						if (!line.TrimStart().StartsWith("<Query"))
+						{
+							builder.AppendLine("            " + line);
+						}
 					}
 
 					// Chiusura blocchi

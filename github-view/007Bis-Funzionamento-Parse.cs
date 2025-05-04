@@ -1,7 +1,7 @@
 ﻿// ⚠️ ATTENZIONE: questo file è stato generato automaticamente
 // Non modificarlo manualmente: verrà sovrascritto ad ogni esecuzione.
 // File sorgente: 007Bis-Funzionamento-Parse.linq
-// Data generazione: 2025-05-04 08:54:31
+// Data generazione: 2025-05-04 08:58:09
 
 namespace GeneratedSnippets
 {
@@ -9,7 +9,6 @@ namespace GeneratedSnippets
     {
         public static void Main()
         {
-            <Query Kind="Program" />
             
             void Main()
             {
