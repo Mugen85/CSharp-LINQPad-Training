@@ -1,8 +1,9 @@
-﻿// ⚠️ ATTENZIONE: questo file è stato generato automaticamente
-// Non modificarlo manualmente: verrà sovrascritto ad ogni esecuzione.
-// File sorgente: 004-Costrutto-if-operatori-relazionali.linq
-// Data generazione: 2025-05-04 09:06:01
-
+﻿namespace GeneratedSnippets
+{
+    // ⚠️ ATTENZIONE: questo file è stato generato automaticamente
+    // Non modificarlo manualmente: verrà sovrascritto ad ogni esecuzione.
+    // File sorgente: 004-Costrutto-if-operatori-relazionali.linq
+    // Data generazione: 2025-05-04 09:09:23
 namespace GeneratedSnippets
 {
     public class 004_Costrutto_if_operatori_relazionali
