@@ -36,6 +36,13 @@ Un'app console scritta in C# che:
 
 ---
 
+## 📁 Navigazione del codice
+
+- ✅ Codice ben formattato (C# puro): [github-view/](github-view)
+- 🛠️ Script sorgente originali per LINQPad: [scripts/](scripts)
+
+---
+
 ## 🧭 Obiettivo della repository
 
 Questa repository è parte di un percorso di crescita professionale:
@@ -100,6 +107,13 @@ A C# console app that:
 - Can be run with `dotnet run` or published as `.exe`
 
 📍 [Go to source code →](tools/ExportLinqToCsApp)
+
+---
+
+## 📁 Code navigation
+
+- ✅ Well-formatted C# code: [github-view/](github-view)
+- 🛠️ Original LINQPad source scripts: [scripts/](scripts)
 
 ---
 
