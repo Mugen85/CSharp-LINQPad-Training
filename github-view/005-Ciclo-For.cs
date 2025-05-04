@@ -1,7 +1,7 @@
 ﻿// ⚠️ ATTENZIONE: questo file è stato generato automaticamente
 // Non modificarlo manualmente: verrà sovrascritto ad ogni esecuzione.
 // File sorgente: 005-Ciclo-For.linq
-// Data generazione: 2025-05-04 09:27:29
+// Data generazione: 2025-05-04 09:30:38
 
 namespace GeneratedSnippets
 {
@@ -9,7 +9,6 @@ namespace GeneratedSnippets
     {
         public static void Main()
         {
-            
             void Main()
             {
             // Stampo i numeri da 1 a 10
@@ -17,9 +16,7 @@ namespace GeneratedSnippets
             {
             Console.WriteLine("Numero: " + i);
             }
-            
             }
-            
         }
     }
 }

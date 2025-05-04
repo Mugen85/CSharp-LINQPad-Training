@@ -62,6 +62,15 @@ namespace ExportLinqToCsApp
 					builder.AppendLine("        public static void Main()");
 					builder.AppendLine("        {");
 
+					lines = lines
+					.Where(l =>
+						!string.IsNullOrWhiteSpace(l) &&
+						!l.TrimStart('\uFEFF', ' ', '\t').Trim().StartsWith("<query", StringComparison.OrdinalIgnoreCase)
+					)
+					.ToArray();
+
+					Console.WriteLine($"[DEBUG] Prima riga valida: {lines.FirstOrDefault()}");
+
 					// Inserimento del contenuto originale indentato
 					foreach (var line in lines)
 					{
