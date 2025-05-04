@@ -68,10 +68,18 @@ namespace ExportLinqToCsApp
 					// Inserimento del contenuto originale indentato
 					foreach (var line in lines)
 					{
-						if (!string.IsNullOrWhiteSpace(line) && !line.Trim().ToLower().StartsWith("<query"))
+						// Pulizia della riga da eventuali caratteri invisibili (es. BOM), spazi e tab
+						var cleanLine = line.TrimStart('\uFEFF', ' ', '\t').Trim();
+
+						// Se la riga è una dichiarazione <Query ... />, la saltiamo
+						if (cleanLine.ToLower().StartsWith("<query"))
 						{
-							builder.AppendLine("            " + line);
+							Console.WriteLine($"🧹 Riga saltata: {cleanLine}"); // solo per debug
+							continue;
 						}
+
+						// Se la riga è valida, la scriviamo con l’indentazione corretta
+						builder.AppendLine("            " + line);
 					}
 
 					// Chiusura blocchi
