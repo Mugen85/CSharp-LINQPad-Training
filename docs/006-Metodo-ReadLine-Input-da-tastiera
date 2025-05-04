@@ -1,4 +1,5 @@
 # 006 – Metodo ReadLine: input da tastiera  
+🔽 English version included below this section
 
 ---
 
@@ -44,6 +45,62 @@ void Main()
     Console.WriteLine($"Piacere di conoscerti, {nome}!");
 }
 ```
+---
+
+![Demo input da tastiera](../demo/006-Metodo-ReadLine-Input-da-tastiera.gif)
+
+---
+
+[Apri la GIF in una nuova scheda](../demo/006-Metodo-ReadLine-Input-da-tastiera.gif)
+
+# 006 – ReadLine method: keyboard input  
+🔼 Italian version above
+
+---
+
+## ✅ Goal
+
+Understand how to read user input from the keyboard during program execution, using the `Console.ReadLine` method.
+
+---
+
+## 💡 Concepts
+
+- `Console.Write()` → shows a message on the same line  
+- `Console.ReadLine()` → reads the text entered by the user  
+- `string` → variable type that stores text  
+- concatenation (`+`) vs interpolation (`$"..."`) to build dynamic phrases  
+
+---
+
+## 🧠 Technical focus
+
+- How to ask for information from the user via console  
+- Store input into a variable  
+- Difference between output with and without line break (`Write` vs `WriteLine`)  
+- Use string interpolation to improve readability  
+
+---
+
+## 📄 Code
+
+```csharp
+void Main()
+{
+    // Display a message asking the user for their name
+    Console.Write("What is your name? ");
+
+    // Read the name entered from the keyboard
+    string name = Console.ReadLine();
+
+    // Older method, still valid
+    // Console.WriteLine("Nice to meet you, " + name + "!");
+
+    // Greet the user using string interpolation
+    Console.WriteLine($"Nice to meet you, {name}!");
+}
+```
+
 ---
 
 ![Demo input da tastiera](../demo/006-Metodo-ReadLine-Input-da-tastiera.gif)
