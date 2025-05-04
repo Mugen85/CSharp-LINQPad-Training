@@ -1,7 +1,8 @@
-﻿    // ⚠️ ATTENZIONE: questo file è stato generato automaticamente
-    // Non modificarlo manualmente: verrà sovrascritto ad ogni esecuzione.
-    // File sorgente: 005-Ciclo-For.linq
-    // Data generazione: 2025-05-04 09:22:25
+﻿// ⚠️ ATTENZIONE: questo file è stato generato automaticamente
+// Non modificarlo manualmente: verrà sovrascritto ad ogni esecuzione.
+// File sorgente: 005-Ciclo-For.linq
+// Data generazione: 2025-05-04 09:27:29
+
 namespace GeneratedSnippets
 {
     public class 005_Ciclo_For

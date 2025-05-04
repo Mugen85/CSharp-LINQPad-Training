@@ -47,10 +47,11 @@ namespace ExportLinqToCsApp
 					string[] lines = File.ReadAllLines(file);
 
 					var builder = new StringBuilder();
-					builder.AppendLine($"    // ⚠️ ATTENZIONE: questo file è stato generato automaticamente");
-					builder.AppendLine($"    // Non modificarlo manualmente: verrà sovrascritto ad ogni esecuzione.");
-					builder.AppendLine($"    // File sorgente: {fileName}");
-					builder.AppendLine($"    // Data generazione: {timestamp}");
+					builder.AppendLine("// ⚠️ ATTENZIONE: questo file è stato generato automaticamente");
+					builder.AppendLine("// Non modificarlo manualmente: verrà sovrascritto ad ogni esecuzione.");
+					builder.AppendLine($"// File sorgente: {fileName}");
+					builder.AppendLine($"// Data generazione: {timestamp}");
+					builder.AppendLine();
 					builder.AppendLine("namespace GeneratedSnippets");
 					builder.AppendLine("{");
 
@@ -68,7 +69,7 @@ namespace ExportLinqToCsApp
 						var cleanLine = line.TrimStart('\uFEFF', ' ', '\t').Trim();
 
 						// Se la riga è una dichiarazione <Query ... />, la saltiamo
-						if (cleanLine.ToLower().StartsWith("<query"))
+						if (cleanLine.StartsWith("<query", StringComparison.OrdinalIgnoreCase))
 						{
 							Console.WriteLine($"🧹 Riga saltata: {cleanLine}"); // solo per debug
 							continue;

@@ -1,7 +1,8 @@
-﻿    // ⚠️ ATTENZIONE: questo file è stato generato automaticamente
-    // Non modificarlo manualmente: verrà sovrascritto ad ogni esecuzione.
-    // File sorgente: 007Bis-Funzionamento-Parse.linq
-    // Data generazione: 2025-05-04 09:22:25
+﻿// ⚠️ ATTENZIONE: questo file è stato generato automaticamente
+// Non modificarlo manualmente: verrà sovrascritto ad ogni esecuzione.
+// File sorgente: 007Bis-Funzionamento-Parse.linq
+// Data generazione: 2025-05-04 09:27:29
+
 namespace GeneratedSnippets
 {
     public class 007Bis_Funzionamento_Parse
