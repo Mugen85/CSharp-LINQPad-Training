@@ -52,12 +52,30 @@ namespace ExportLinqToCsApp
 					builder.AppendLine($"// File sorgente: {fileName}");
 					builder.AppendLine($"// Data generazione: {timestamp}\n");
 
+					// Aggiunta della struttura C# formattata
+					builder.AppendLine("namespace GeneratedSnippets");
+					builder.AppendLine("{");
+
+					// Conversione nome file in nome classe (sostituisce i trattini con underscore)
+					string className = Path.GetFileNameWithoutExtension(file).Replace("-", "_");
+					builder.AppendLine($"    public class {className}");
+					builder.AppendLine("    {");
+					builder.AppendLine("        public static void Main()");
+					builder.AppendLine("        {");
+
+					// Inserimento del contenuto originale indentato
 					foreach (var line in lines)
 					{
-						builder.AppendLine(line);
+						builder.AppendLine("            " + line);
 					}
 
+					// Chiusura blocchi
+					builder.AppendLine("        }");
+					builder.AppendLine("    }");
+					builder.AppendLine("}");
+
 					File.WriteAllText(outputFile, builder.ToString(), Encoding.UTF8);
+
 					Log(logPath, $"✅ {fileName} → {newFileName}");
 					count++;
 				}

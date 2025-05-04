@@ -1,17 +1,26 @@
 ﻿// ⚠️ ATTENZIONE: questo file è stato generato automaticamente
 // Non modificarlo manualmente: verrà sovrascritto ad ogni esecuzione.
 // File sorgente: 005-Ciclo-For.linq
-// Data generazione: 2025-05-04 08:42:02
+// Data generazione: 2025-05-04 08:54:31
 
-<Query Kind="Program" />
-
-void Main()
+namespace GeneratedSnippets
 {
-	// Stampo i numeri da 1 a 10
-	for (int i = 1; i <= 10; i++)
-	{
-		Console.WriteLine("Numero: " + i);
-	}
-	
+    public class 005_Ciclo_For
+    {
+        public static void Main()
+        {
+            <Query Kind="Program" />
+            
+            void Main()
+            {
+            	// Stampo i numeri da 1 a 10
+            	for (int i = 1; i <= 10; i++)
+            	{
+            		Console.WriteLine("Numero: " + i);
+            	}
+            	
+            }
+            
+        }
+    }
 }
-
