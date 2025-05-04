@@ -1,7 +1,7 @@
 ﻿// ⚠️ ATTENZIONE: questo file è stato generato automaticamente
 // Non modificarlo manualmente: verrà sovrascritto ad ogni esecuzione.
 // File sorgente: 005-Ciclo-For.linq
-// Data generazione: 2025-05-04 08:15:28
+// Data generazione: 2025-05-04 08:42:02
 
 <Query Kind="Program" />
 
