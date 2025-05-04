@@ -1,7 +1,7 @@
 ﻿// ⚠️ ATTENZIONE: questo file è stato generato automaticamente
 // Non modificarlo manualmente: verrà sovrascritto ad ogni esecuzione.
 // File sorgente: 004-Costrutto-if-operatori-relazionali.linq
-// Data generazione: 2025-05-04 09:01:44
+// Data generazione: 2025-05-04 09:06:01
 
 namespace GeneratedSnippets
 {
@@ -9,11 +9,9 @@ namespace GeneratedSnippets
     {
         public static void Main()
         {
-            
             void Main()
             {
             	int eta = 18;
-            	
             	// Verifico se la persona è maggiorenne
             	if (eta >= 18)
             	{
@@ -23,9 +21,7 @@ namespace GeneratedSnippets
             	{
             		Console.WriteLine("Sei minorenne");
             	}
-            	
             }
-            
         }
     }
 }

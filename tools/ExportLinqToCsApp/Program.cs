@@ -51,6 +51,7 @@ namespace ExportLinqToCsApp
 					builder.AppendLine("// Non modificarlo manualmente: verrà sovrascritto ad ogni esecuzione.");
 					builder.AppendLine($"// File sorgente: {fileName}");
 					builder.AppendLine($"// Data generazione: {timestamp}\n");
+					// Aggiunta della struttura C# formattata
 					builder.AppendLine("namespace GeneratedSnippets");
 					builder.AppendLine("{");
 
@@ -64,7 +65,7 @@ namespace ExportLinqToCsApp
 					// Inserimento del contenuto originale indentato
 					foreach (var line in lines)
 					{
-						if (!line.TrimStart().StartsWith("<Query"))
+						if (!string.IsNullOrWhiteSpace(line) && !line.Trim().ToLower().StartsWith("<query"))
 						{
 							builder.AppendLine("            " + line);
 						}
