@@ -1,12 +1,17 @@
 ﻿// ⚠️ ATTENZIONE: questo file è stato generato automaticamente
 // Non modificarlo manualmente: verrà sovrascritto ad ogni esecuzione.
-// File sorgente: 001-Metodo-Console-WriteLine.linq
+// File sorgente: 005-Ciclo-For.linq
 // Data generazione: 2025-05-04 08:15:28
 
 <Query Kind="Program" />
 
 void Main()
 {
-	Console.WriteLine("Ciao, mi chiamo Marco!");
+	// Stampo i numeri da 1 a 10
+	for (int i = 1; i <= 10; i++)
+	{
+		Console.WriteLine("Numero: " + i);
+	}
+	
 }
 

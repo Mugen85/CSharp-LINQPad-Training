@@ -1,0 +1,53 @@
+# 006 – Metodo ReadLine: input da tastiera  
+
+---
+
+## ✅ Obiettivo
+
+Capire come leggere l’input dell’utente da tastiera durante l’esecuzione di un programma, usando il metodo `Console.ReadLine`.
+
+---
+
+## 💡 Concetti
+
+- `Console.Write()` → mostra un messaggio sulla stessa riga  
+- `Console.ReadLine()` → legge il testo inserito dall’utente  
+- `string` → tipo di variabile che memorizza il testo  
+- concatenazione (`+`) vs interpolazione (`$"..."`) per costruire frasi dinamiche  
+
+---
+
+## 🧠 Focus tecnico
+
+- Come chiedere informazioni all’utente da console  
+- Salvare l’input in una variabile  
+- Differenza tra output senza e con ritorno a capo (`Write` vs `WriteLine`)  
+- Usare l’interpolazione per rendere il codice più leggibile  
+
+---
+
+## 📄 Codice
+
+```csharp
+void Main()
+{
+    // Mostro un messaggio per chiedere il nome all’utente
+    Console.Write("Come ti chiami? ");
+
+    // Leggo il nome inserito da tastiera
+    string nome = Console.ReadLine();
+
+    // Metodo più vecchio, ma utilizzabile
+    // Console.WriteLine("Piacere di conoscerti, " + nome + "!");
+
+    // Saluto usando l’interpolazione di stringa
+    Console.WriteLine($"Piacere di conoscerti, {nome}!");
+}
+```
+---
+
+![Demo input da tastiera](../demo/006-Metodo-ReadLine-Input-da-tastiera.gif)
+
+---
+
+[Apri la GIF in una nuova scheda](../demo/006-Metodo-ReadLine-Input-da-tastiera.gif)
