@@ -1,8 +1,6 @@
 ﻿// ExportLinqToCsApp - Programma Console C# per convertire .linq in .cs
 // Obiettivo: sostituire lo script PowerShell con una soluzione C# coerente col progetto
 
-using System;
-using System.IO;
 using System.Text;
 
 namespace ExportLinqToCsApp
@@ -16,96 +14,91 @@ namespace ExportLinqToCsApp
 			string outputPath  = Path.Combine(projectRoot, "github-view");
 			string logPath     = Path.Combine(projectRoot, "conversione.log");
 
-			Console.WriteLine($"[DEBUG] Percorso scripts: {scriptsPath}");
-
 			string timestamp = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
 
 			Log(logPath, $"[START] {timestamp} - Inizio conversione\n");
 
-			try
+			// ✅ Uso del metodo VerificaPercorso
+			if (!VerificaPercorso(scriptsPath, "scripts") || !VerificaPercorso(outputPath, "github-view"))
+				return;
+
+			Directory.CreateDirectory(outputPath);
+
+			int count = 0;
+
+			foreach (string file in Directory.GetFiles(scriptsPath, "*.linq"))
 			{
-				if (!Directory.Exists(scriptsPath))
+				string fileName = Path.GetFileName(file);
+				string newFileName = Path.ChangeExtension(fileName, ".cs");
+				string outputFile = Path.Combine(outputPath, newFileName);
+				string[] lines = File.ReadAllLines(file);
+
+				DateTime now = DateTime.Now;
+				DateTime lastModified = File.GetLastWriteTime(file);
+				TimeSpan delta = now - lastModified;
+
+				if (delta.TotalSeconds < 30 || delta.TotalMinutes > 5)
 				{
-					Console.WriteLine($"❌ Cartella scripts non trovata: {scriptsPath}");
-					return;
+					Console.WriteLine($"⏱ Ignorato per timing: {fileName} (modificato {delta.TotalSeconds:N0} sec fa)");
+					continue;
 				}
 
-				Directory.CreateDirectory(outputPath);
+				var builder = new StringBuilder();
+				builder.AppendLine($"    // ⚠️ ATTENZIONE: questo file è stato generato automaticamente");
+				builder.AppendLine($"    // Non modificarlo manualmente: verrà sovrascritto ad ogni esecuzione.");
+				builder.AppendLine($"    // File sorgente: {fileName}");
+				builder.AppendLine($"    // Data generazione: {timestamp}");
+				builder.AppendLine("namespace GeneratedSnippets");
+				builder.AppendLine("{");
 
-				foreach (string file in Directory.GetFiles(outputPath, "*.cs"))
+				string className = Path.GetFileNameWithoutExtension(file).Replace("-", "_");
+				builder.AppendLine($"    public class {className}");
+				builder.AppendLine("    {");
+				builder.AppendLine("        public static void Main()");
+				builder.AppendLine("        {");
+
+				foreach (var line in lines)
 				{
-					File.Delete(file);
+					var cleanLine = line.TrimStart('\uFEFF', ' ', '\t').Trim();
+					if (cleanLine.StartsWith("<query", StringComparison.OrdinalIgnoreCase))
+						continue;
+
+					builder.AppendLine("            " + cleanLine);
 				}
 
-				int count = 0;
-				foreach (string file in Directory.GetFiles(scriptsPath, "*.linq"))
+				builder.AppendLine("        }");
+				builder.AppendLine("    }");
+				builder.AppendLine("}");
+
+				string newContent = builder.ToString();
+
+				// Se il file .cs esiste, confronto i contenuti
+				if (File.Exists(outputFile))
 				{
-					string fileName = Path.GetFileName(file);
-					string newFileName = Path.ChangeExtension(fileName, ".cs");
-					string outputFile = Path.Combine(outputPath, newFileName);
-
-					string[] lines = File.ReadAllLines(file);
-
-					var builder = new StringBuilder();
-					builder.AppendLine("// ⚠️ ATTENZIONE: questo file è stato generato automaticamente");
-					builder.AppendLine("// Non modificarlo manualmente: verrà sovrascritto ad ogni esecuzione.");
-					builder.AppendLine($"// File sorgente: {fileName}");
-					builder.AppendLine($"// Data generazione: {timestamp}");
-					builder.AppendLine();
-					builder.AppendLine("namespace GeneratedSnippets");
-					builder.AppendLine("{");
-
-					// Conversione nome file in nome classe (sostituisce i trattini con underscore)
-					string className = Path.GetFileNameWithoutExtension(file).Replace("-", "_");
-					builder.AppendLine($"    public class {className}");
-					builder.AppendLine("    {");
-					builder.AppendLine("        public static void Main()");
-					builder.AppendLine("        {");
-
-					lines = lines
-					.Where(l =>
-						!string.IsNullOrWhiteSpace(l) &&
-						!l.TrimStart('\uFEFF', ' ', '\t').Trim().StartsWith("<query", StringComparison.OrdinalIgnoreCase)
-					)
-					.ToArray();
-
-					Console.WriteLine($"[DEBUG] Prima riga valida: {lines.FirstOrDefault()}");
-
-					// Inserimento del contenuto originale indentato
-					foreach (var line in lines)
+					string existingContent = File.ReadAllText(outputFile);
+					if (existingContent == newContent)
 					{
-						// Pulizia della riga da eventuali caratteri invisibili (es. BOM), spazi e tab
-						var cleanLine = line.TrimStart('\uFEFF', ' ', '\t').Trim();
-
-						// Se la riga è una dichiarazione <Query ... />, la saltiamo
-						if (cleanLine.StartsWith("<query", StringComparison.OrdinalIgnoreCase))
-						{
-							Console.WriteLine($"🧹 Riga saltata: {cleanLine}"); // solo per debug
-							continue;
-						}
-
-						// Se la riga è valida, la scriviamo con l’indentazione corretta
-						builder.AppendLine("            " + cleanLine);
+						Console.WriteLine($"🟡 Nessuna modifica: {fileName}");
+						continue;
 					}
-
-					// Chiusura blocchi
-					builder.AppendLine("        }");
-					builder.AppendLine("    }");
-					builder.AppendLine("}");
-
-					File.WriteAllText(outputFile, builder.ToString(), Encoding.UTF8);
-
-					Log(logPath, $"✅ {fileName} → {newFileName}");
-					count++;
 				}
 
+				File.WriteAllText(outputFile, newContent, Encoding.UTF8);
+				Log(logPath, $"✅ {fileName} → {newFileName}");
+				Console.WriteLine($"✅ Convertito: {fileName}");
+				count++;
+			}
+
+			// ✅ Messaggio finale
+			if (count > 0)
+			{
 				Console.WriteLine($"\n✅ Conversione completata. File convertiti: {count}\n");
 				Log(logPath, $"[END] File totali convertiti: {count}\n");
 			}
-			catch (Exception ex)
+			else
 			{
-				Console.WriteLine($"❌ Errore: {ex.Message}");
-				Log(logPath, $"❌ Errore: {ex.Message}\n");
+				Console.WriteLine("\nℹ️ Nessun file da convertire. Tutto aggiornato.\n");
+				Log(logPath, $"[END] Nessun file convertito. Tutto aggiornato.\n");
 			}
 
 			Console.WriteLine("Premi un tasto per chiudere...");
