@@ -51,8 +51,6 @@ namespace ExportLinqToCsApp
 					builder.AppendLine("// Non modificarlo manualmente: verrà sovrascritto ad ogni esecuzione.");
 					builder.AppendLine($"// File sorgente: {fileName}");
 					builder.AppendLine($"// Data generazione: {timestamp}\n");
-
-					// Aggiunta della struttura C# formattata
 					builder.AppendLine("namespace GeneratedSnippets");
 					builder.AppendLine("{");
 

@@ -1,7 +1,7 @@
 ﻿// ⚠️ ATTENZIONE: questo file è stato generato automaticamente
 // Non modificarlo manualmente: verrà sovrascritto ad ogni esecuzione.
 // File sorgente: 000-OOP-classe-oggetto-metodo.linq
-// Data generazione: 2025-05-04 08:58:09
+// Data generazione: 2025-05-04 09:01:44
 
 namespace GeneratedSnippets
 {
