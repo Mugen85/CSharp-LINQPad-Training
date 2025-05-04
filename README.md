@@ -16,6 +16,7 @@ Ogni file è tracciato, documentato e automatizzato. La repo include:
 | `/docs/` | Documentazione `.md` per ogni esercizio |
 | `/tools/ExportLinqToCsApp/` | Tool C# per la conversione automatica `.linq → .cs` |
 | `/github-view/` | File `.cs` generati per preview su GitHub |
+| `/demo/` | GIF animate per mostrare l'esecuzione degli script |
 | `.gitignore` | Esclusione di file temporanei, log, binari |
 | `conversione.log` | Log automatico delle conversioni (non versionato) |
 
@@ -90,10 +91,12 @@ Every file is tracked, documented, and automated. This repository includes:
 | `/docs/` | Markdown `.md` documentation for each exercise |
 | `/tools/ExportLinqToCsApp/` | C# console tool for converting `.linq → .cs` |
 | `/github-view/` | Generated `.cs` files for GitHub preview |
+| `/demo/` | Animated GIFs showing script execution |
 | `.gitignore` | Excludes logs, binaries, temp files |
 | `conversione.log` | Log of conversions (not versioned) |
 
 ---
+
 
 ## 🛠 Included tool
 
