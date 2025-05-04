@@ -54,3 +54,62 @@ Apri un terminale e spostati nella cartella:
 ```bash
 cd tools/ExportLinqToCsApp
 dotnet run
+```
+
+---
+
+# 🛠 ExportLinqToCsApp (English version)
+
+Console application written in **C#** to automatically convert `.linq` files (used in LINQPad) into clean, structured, and well-formatted `.cs` files for GitHub preview.
+
+---
+
+## ✅ Purpose of the tool
+
+This utility solves a common problem in a clean and automated way:
+
+> 🧩 *Displaying LINQPad code properly and professionally on GitHub.*
+
+It converts each `.linq` file into a valid `.cs` file, properly indented and wrapped inside a `namespace` and `class`, ready to be previewed.
+
+---
+
+## 🧠 Advanced features
+
+- 🔎 **Automatic scan** of the `/scripts` folder
+- 🚫 Skips the line `<Query Kind="Program" />` (specific to LINQPad)
+- 🎯 Converts only recently modified files:
+  - ✅ Between **30 seconds** and **5 minutes ago**
+  - ⏱ Skips files that are too new or too old
+- 📝 Adds an **auto-generated header** including:
+  - Original file name
+  - Conversion timestamp
+- 🧠 Reformats code into:
+  - `namespace GeneratedSnippets`
+  - `public class ClassName { public static void Main() { ... } }`
+- 📋 **Content check:** if the `.cs` file already exists and is identical, it won't be overwritten
+- 📄 Automatically generates a detailed log (`conversione.log`)
+
+---
+
+## 📁 Project structure
+
+| Path | Description |
+|------|-------------|
+| `scripts/` | Source `.linq` files created with LINQPad |
+| `github-view/` | Converted `.cs` files to preview on GitHub |
+| `tools/ExportLinqToCsApp/` | Source code of this tool |
+| `conversione.log` | Log of conversions (not versioned) |
+
+---
+
+## 🚀 How to run
+
+### 🧪 Development mode
+
+Open a terminal and navigate to the folder:
+
+```bash
+cd tools/ExportLinqToCsApp
+dotnet run
+
