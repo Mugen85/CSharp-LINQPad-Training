@@ -39,7 +39,7 @@ namespace ExportLinqToCsApp
 
 				if (delta.TotalSeconds < 30 || delta.TotalMinutes > 5)
 				{
-					Console.WriteLine($"⏱ Ignorato per timing: {fileName} (modificato {delta.TotalSeconds:N0} sec fa)");
+					//Console.WriteLine($"⏱ Ignorato per timing: {fileName} (modificato {delta.TotalSeconds:N0} sec fa)");
 					continue;
 				}
 
