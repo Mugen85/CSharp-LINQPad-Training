@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ExportLinqToCsApp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+be79e8ea1f2e830ea78855cca236d47441d2e62e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d9f78ce811b63bd79e1e2a4855380ac1e7ecead3")]
 [assembly: System.Reflection.AssemblyProductAttribute("ExportLinqToCsApp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ExportLinqToCsApp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
