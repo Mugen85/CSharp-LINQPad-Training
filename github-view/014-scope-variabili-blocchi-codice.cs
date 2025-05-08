@@ -1,7 +1,7 @@
 ﻿    // ⚠️ ATTENZIONE: questo file è stato generato automaticamente
     // Non modificarlo manualmente: verrà sovrascritto ad ogni esecuzione.
     // File sorgente: 014-scope-variabili-blocchi-codice.linq
-    // Data generazione: 2025-05-08 17:11:45
+    // Data generazione: 2025-05-08 17:15:36
 namespace GeneratedSnippets
 {
     public class 014_scope_variabili_blocchi_codice
