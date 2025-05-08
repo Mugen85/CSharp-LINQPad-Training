@@ -1,7 +1,7 @@
 ﻿    // ⚠️ ATTENZIONE: questo file è stato generato automaticamente
     // Non modificarlo manualmente: verrà sovrascritto ad ogni esecuzione.
     // File sorgente: 012-parole-chiave-riservate-csharp.linq
-    // Data generazione: 2025-05-08 17:01:43
+    // Data generazione: 2025-05-08 17:05:54
 namespace GeneratedSnippets
 {
     public class 012_parole_chiave_riservate_csharp
