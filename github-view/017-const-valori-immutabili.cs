@@ -1,7 +1,7 @@
 ﻿    // ⚠️ ATTENZIONE: questo file è stato generato automaticamente
     // Non modificarlo manualmente: verrà sovrascritto ad ogni esecuzione.
     // File sorgente: 017-const-valori-immutabili.linq
-    // Data generazione: 2025-05-08 17:55:55
+    // Data generazione: 2025-05-08 18:00:57
 namespace GeneratedSnippets
 {
     public class 017_const_valori_immutabili
