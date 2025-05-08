@@ -37,9 +37,9 @@ namespace ExportLinqToCsApp
 				DateTime lastModified = File.GetLastWriteTime(file);
 				TimeSpan delta = now - lastModified;
 
-				if (delta.TotalSeconds < 10 || delta.TotalMinutes > 5)
+				if (delta.TotalSeconds < 5 || delta.TotalMinutes > 15)
 				{
-					//Console.WriteLine($"⏱ Ignorato per timing: {fileName} (modificato {delta.TotalSeconds:N0} sec fa)");
+					Console.WriteLine($"⏱ Ignorato per timing: {fileName} (modificato {delta.TotalSeconds:N0} sec fa)");
 					continue;
 				}
 
