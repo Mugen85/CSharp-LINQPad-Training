@@ -1,7 +1,7 @@
 ﻿    // ⚠️ ATTENZIONE: questo file è stato generato automaticamente
     // Non modificarlo manualmente: verrà sovrascritto ad ogni esecuzione.
     // File sorgente: 015-ordine-esecuzione-istruzioni.linq
-    // Data generazione: 2025-05-08 17:15:36
+    // Data generazione: 2025-05-08 17:42:34
 namespace GeneratedSnippets
 {
     public class 015_ordine_esecuzione_istruzioni
