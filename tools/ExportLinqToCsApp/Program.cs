@@ -26,7 +26,7 @@ namespace ExportLinqToCsApp
 
 			int count = 0;
 
-			foreach (string file in Directory.GetFiles(scriptsPath, "*.linq"))
+			foreach (string file in Directory.GetFiles(scriptsPath, "*.linq", SearchOption.AllDirectories))
 			{
 				string fileName = Path.GetFileName(file);
 				string newFileName = Path.ChangeExtension(fileName, ".cs");
