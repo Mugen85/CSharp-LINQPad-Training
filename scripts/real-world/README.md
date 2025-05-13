@@ -3,92 +3,125 @@
 
 ---
 
-Questa cartella contiene una raccolta di **script pratici e realistici**, scritti in C# e progettati per essere eseguiti in LINQPad.
+Questa cartella raccoglie **script reali e avanzati** scritti in **C# per LINQPad**, progettati per simulare scenari pratici e concreti come:
 
-Ogni esempio è costruito per mostrare **l'applicazione concreta dei concetti base** affrontati nella cartella `/scripts/base`.
+- calcolo di carrello con sconti multipli
+- validazione dati utente
+- flussi condizionali applicabili in contesti aziendali
+
+Ogni script è sviluppato in stile *Clean Code*, con particolare attenzione alla **leggibilità**, **modularità** e **architettura software**.
 
 ---
 
 ## ✅ Obiettivo della cartella
 
-Dimostrare come anche gli elementi fondamentali del linguaggio C#  
-(posizioni delle variabili, cicli, condizioni, input, output)  
-possano essere **combinati e applicati a casi d'uso reali**.
+Dimostrare come applicare i concetti fondamentali di C# e .NET  
+in casi d’uso realistici e ben strutturati, secondo i principi descritti nel libro  
+**“Clean Code” di Robert C. Martin**, con particolare focus su:
 
-Questa sezione rappresenta il **passaggio dalla teoria alla pratica**,  
-dove ogni script ha uno scopo funzionale e una logica completa.
-
----
-
-## 📂 Struttura degli script
-
-Ogni file `.linq` segue una struttura coerente:
-
-- **Numerazione** progressiva (`001-*`, `002-*`, ecc.)
-- **Intestazione commentata** nel codice che spiega:
-  - 🎯 Obiettivo pratico dello script
-  - 🧠 Concetti tecnici usati
-- **Codice pulito**, leggibile e formattato per esecuzione diretta in LINQPad
-
-Esempio di intestazione all’interno di uno script:
-
-```csharp
-// ✅ Obiettivo: creare una semplice calcolatrice tra due numeri inseriti da tastiera
-// 🧠 Concetti usati: parse, if, switch, variabili, output, gestione input base
-```
-## 🔍 Perché è importante
-
-Questa cartella è pensata per:
-
-- 🧠 Rinforzare la logica di programmazione con contesti realistici  
-- 🧱 Passare dalla scrittura di **singole istruzioni** a **blocchi funzionali**  
-- 📈 Prepararsi alla costruzione di programmi **più grandi e modulari**  
-- 🎯 Allenare la mente a **pensare in termini di flusso, input, controllo, output**
-
-# 🌍 Real-world examples with C# in LINQPad (English version)
+- SRP (una classe = una responsabilità)
+- OCP (estendibilità tramite interfacce)
+- nomi chiari e significativi
+- funzioni brevi, pure e testabili
+- separazione netta tra logica e presentazione
 
 ---
 
-This folder contains a collection of **practical, real-life scripts**, written in C# and designed to run in LINQPad.
+## 📂 Struttura organizzativa
 
-Each example is designed to demonstrate **the concrete application of basic C# concepts** covered in the `/scripts/base` folder.
+| Cartella                   | Contenuto                                                    |
+|----------------------------|--------------------------------------------------------------|
+| `/scripts/real-world/`     | Codice `.linq` eseguibile e convertibile in `.cs`            |
+| `/docs/real-world/`        | Documentazione `.md` completa, bilingue (IT + EN)            |
+| `/github-view/real-world/` | File `.cs` generati leggibili direttamente su GitHub         |
+
+Ogni script è numerato (`001`, `002`, ...) e segue uno schema coerente sia nel codice sia nella documentazione.
+
+---
+
+## 🧠 Focus tecnico
+
+Gli script non sono esercizi scolastici:  
+sono progettati come **mini-task aziendali**, dove ogni riga ha uno scopo funzionale e ogni struttura riflette un pensiero architetturale.
+
+In particolare:
+
+- **i file `.linq`** sono compatti, puliti, adatti all’esecuzione immediata
+- **i file `.md`** forniscono contesto, motivazione progettuale e linee guida
+- la **separazione tra logica, presentazione e struttura** è sempre rispettata
+
+---
+
+## 📌 Nota importante
+
+Questa cartella rappresenta **il livello più alto del mio percorso**,  
+pensato per mostrare come ragiono quando costruisco soluzioni scalabili, modulari e pulite.
+
+📄 Ogni file `.md` ha una **versione italiana seguita da una versione inglese**.
+
+👉 Vai in fondo a questo documento per leggere la **versione in inglese**.
+
+---
+
+# 🌍 Real-world examples with C# in LINQPad  
+🔼 Versione italiana sopra
+
+---
+
+This folder contains a collection of **realistic and professional scripts** written in **C# for LINQPad**, designed to simulate practical and concrete use cases like:
+
+- multi-rule discount calculation
+- user data validation
+- decision flows applied to business scenarios
+
+Each script is crafted following *Clean Code* principles, with strong emphasis on **readability**, **modularity**, and **software architecture thinking**.
 
 ---
 
 ## ✅ Purpose of this folder
 
-To show how fundamental C# building blocks  
-(variables, loops, conditions, input, output)  
-can be **combined and applied in real use cases**.
+To demonstrate how C# and .NET can be applied to **real-world tasks** with the same care used in production systems.
 
-This section represents the **transition from theory to practice**,  
-where each script has a real goal and a complete logical flow.
+Each script is based on **Robert C. Martin’s “Clean Code”**, and showcases:
+
+- **SRP** (Single Responsibility Principle)
+- **OCP** (Open/Closed Principle)
+- meaningful naming and short functions
+- logical separation between business logic and output
+- pure, maintainable, testable design
 
 ---
 
-## 📂 Script structure
+## 📂 Project structure
 
-Each `.linq` file follows a consistent structure:
+| Folder                    | Description                                                  |
+|---------------------------|--------------------------------------------------------------|
+| `/scripts/real-world/`     | Executable `.linq` scripts, also convertible to `.cs`         |
+| `/docs/real-world/`        | Complete bilingual documentation (`.md`, IT + EN)             |
+| `/github-view/real-world/` | Auto-generated `.cs` code for GitHub-friendly viewing         |
 
-- **Sequential numbering** (`001-*`, `002-*`, etc.)
-- **Header comments** inside the code explaining:
-  - 🎯 The practical goal of the script  
-  - 🧠 The technical concepts involved
-- **Clean and readable code**, formatted for direct execution in LINQPad
+Each script follows a consistent naming pattern (`001-*`, `002-*`, etc.) and includes clear headers inside the code.
 
-Example of header inside a script:
+---
 
-```csharp
-// ✅ Goal: create a simple calculator that works with two user-entered numbers
-// 🧠 Concepts: parse, if, switch, variables, output, basic input handling
-```
+## 🧠 Technical focus
 
-## 🔍 Why this is important
+These scripts are not exercises for beginners.  
+They are crafted as **real technical challenges**, where each decision is intentional and each class reflects **architecture-first thinking**.
 
-This folder is meant to:
+Specifically:
 
-- 🧠 Reinforce programming logic with realistic use cases  
-- 🧱 Move from writing **single instructions** to **functional code blocks**  
-- 📈 Prepare for building **larger and modular programs**  
-- 🎯 Train your thinking in terms of **flow, input, control, and output**
+- **`.linq` files** are clean, self-contained, and immediately runnable
+- **`.md` files** explain the context, structure, and architectural choices
+- logic, structure, and presentation are always separated
 
+---
+
+## 📌 Key message
+
+This folder represents the **highest expression of my developer journey**.  
+It's designed to **show companies how I think, how I design, and how I structure real solutions**.
+
+📄 Each `.md` file includes both **English and Italian versions** of the explanation.
+
+👉 Scroll up to read the **Italian version**.
