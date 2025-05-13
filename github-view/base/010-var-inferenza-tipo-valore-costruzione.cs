@@ -1,7 +1,7 @@
 ﻿    // ⚠️ ATTENZIONE: questo file è stato generato automaticamente
     // Non modificarlo manualmente: verrà sovrascritto ad ogni esecuzione.
     // File sorgente: 010-var-inferenza-tipo-valore-costruzione.linq
-    // Data generazione: 2025-05-08 16:41:56
+    // Data generazione: 2025-05-13 15:00:05
 namespace GeneratedSnippets
 {
     public class 010_var_inferenza_tipo_valore_costruzione

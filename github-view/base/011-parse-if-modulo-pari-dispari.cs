@@ -1,7 +1,7 @@
 ﻿    // ⚠️ ATTENZIONE: questo file è stato generato automaticamente
     // Non modificarlo manualmente: verrà sovrascritto ad ogni esecuzione.
     // File sorgente: 011-parse-if-modulo-pari-dispari.linq
-    // Data generazione: 2025-05-08 16:56:33
+    // Data generazione: 2025-05-13 15:00:05
 namespace GeneratedSnippets
 {
     public class 011_parse_if_modulo_pari_dispari

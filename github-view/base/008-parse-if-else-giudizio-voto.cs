@@ -1,7 +1,7 @@
 ﻿    // ⚠️ ATTENZIONE: questo file è stato generato automaticamente
     // Non modificarlo manualmente: verrà sovrascritto ad ogni esecuzione.
     // File sorgente: 008-parse-if-else-giudizio-voto.linq
-    // Data generazione: 2025-05-07 18:48:31
+    // Data generazione: 2025-05-13 15:00:05
 namespace GeneratedSnippets
 {
     public class 008_parse_if_else_giudizio_voto

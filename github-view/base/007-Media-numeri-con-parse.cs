@@ -1,7 +1,7 @@
 ﻿    // ⚠️ ATTENZIONE: questo file è stato generato automaticamente
     // Non modificarlo manualmente: verrà sovrascritto ad ogni esecuzione.
     // File sorgente: 007-Media-numeri-con-parse.linq
-    // Data generazione: 2025-05-07 18:09:07
+    // Data generazione: 2025-05-13 15:00:05
 namespace GeneratedSnippets
 {
     public class 007_Media_numeri_con_parse

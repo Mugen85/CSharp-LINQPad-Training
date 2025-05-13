@@ -1,7 +1,7 @@
 ﻿    // ⚠️ ATTENZIONE: questo file è stato generato automaticamente
     // Non modificarlo manualmente: verrà sovrascritto ad ogni esecuzione.
     // File sorgente: 002-Dichiarazione-e-inizializzazione-variabili.linq
-    // Data generazione: 2025-05-04 09:49:50
+    // Data generazione: 2025-05-13 15:00:05
 namespace GeneratedSnippets
 {
     public class 002_Dichiarazione_e_inizializzazione_variabili

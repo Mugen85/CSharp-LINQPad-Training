@@ -1,7 +1,7 @@
 ﻿    // ⚠️ ATTENZIONE: questo file è stato generato automaticamente
     // Non modificarlo manualmente: verrà sovrascritto ad ogni esecuzione.
     // File sorgente: 006-Metodo-ReadLine-Input-da-tastiera.linq
-    // Data generazione: 2025-05-04 09:49:50
+    // Data generazione: 2025-05-13 15:00:05
 namespace GeneratedSnippets
 {
     public class 006_Metodo_ReadLine_Input_da_tastiera

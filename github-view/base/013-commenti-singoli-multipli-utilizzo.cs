@@ -1,7 +1,7 @@
 ﻿    // ⚠️ ATTENZIONE: questo file è stato generato automaticamente
     // Non modificarlo manualmente: verrà sovrascritto ad ogni esecuzione.
     // File sorgente: 013-commenti-singoli-multipli-utilizzo.linq
-    // Data generazione: 2025-05-08 17:05:54
+    // Data generazione: 2025-05-13 15:00:05
 namespace GeneratedSnippets
 {
     public class 013_commenti_singoli_multipli_utilizzo

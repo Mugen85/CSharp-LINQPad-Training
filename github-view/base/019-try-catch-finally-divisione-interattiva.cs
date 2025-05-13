@@ -1,7 +1,7 @@
 ﻿    // ⚠️ ATTENZIONE: questo file è stato generato automaticamente
     // Non modificarlo manualmente: verrà sovrascritto ad ogni esecuzione.
     // File sorgente: 019-try-catch-finally-divisione-interattiva.linq
-    // Data generazione: 2025-05-12 12:59:09
+    // Data generazione: 2025-05-13 15:00:05
 namespace GeneratedSnippets
 {
     public class 019_try_catch_finally_divisione_interattiva

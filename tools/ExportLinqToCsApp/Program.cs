@@ -30,16 +30,24 @@ namespace ExportLinqToCsApp
 			{
 				string fileName = Path.GetFileName(file);
 				string newFileName = Path.ChangeExtension(fileName, ".cs");
-				string outputFile = Path.Combine(outputPath, newFileName);
+				string relativePath = Path.GetRelativePath(scriptsPath, file);
+				string subfolder = Path.GetDirectoryName(relativePath); // es. "real-world" o ""
+
+				string outputSubfolder = Path.Combine(outputPath, subfolder ?? "");
+				Directory.CreateDirectory(outputSubfolder);
+
+				string outputFile = Path.Combine(outputSubfolder, newFileName);
+
 				string[] lines = File.ReadAllLines(file);
 
 				DateTime now = DateTime.Now;
 				DateTime lastModified = File.GetLastWriteTime(file);
 				TimeSpan delta = now - lastModified;
 
+		//funzione legata al tempo attivata per modifica con sottocartella nuova /real-world
 				if (delta.TotalSeconds < 2 || delta.TotalMinutes > 30)
 				{
-					//Console.WriteLine($"⏱ Ignorato per timing: {fileName} (modificato {delta.TotalSeconds:N0} sec fa)");
+				//Console.WriteLine($"⏱ Ignorato per timing: {fileName} (modificato {delta.TotalSeconds:N0} sec fa)");
 					continue;
 				}
 

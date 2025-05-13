@@ -1,7 +1,7 @@
 ﻿    // ⚠️ ATTENZIONE: questo file è stato generato automaticamente
     // Non modificarlo manualmente: verrà sovrascritto ad ogni esecuzione.
     // File sorgente: 009-parse-for-tabellina-singolo-numero.linq
-    // Data generazione: 2025-05-07 18:54:56
+    // Data generazione: 2025-05-13 15:00:05
 namespace GeneratedSnippets
 {
     public class 009_parse_for_tabellina_singolo_numero
