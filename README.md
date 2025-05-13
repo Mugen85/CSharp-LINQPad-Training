@@ -13,6 +13,7 @@ Ogni file è tracciato, documentato e automatizzato. La repo include:
 | Cartella/File | Contenuto |
 |---------------|-----------|
 | `/scripts/` | Script `.linq` eseguibili in LINQPad |
+| `/scripts/real-world/` | Script avanzati e realistici per simulazioni concrete |
 | `/docs/` | Documentazione `.md` per ogni esercizio |
 | `/tools/ExportLinqToCsApp/` | Tool C# per la conversione automatica `.linq → .cs` |
 | `/github-view/` | File `.cs` generati per preview su GitHub |
@@ -41,6 +42,16 @@ Un'app console scritta in C# che:
 
 - ✅ Codice ben formattato (C# puro): [github-view/](github-view)
 - 🛠️ Script sorgente originali per LINQPad: [scripts/](scripts)
+
+---
+
+## 🚀 Script reali e avanzati
+
+🔍 La sottocartella [`real-world`](scripts/real-world) raccoglie gli script più realistici, complessi e rappresentativi.  
+Ogni esempio è pensato per dimostrare competenze utili in ambito lavorativo, come se fossero mini task aziendali.
+
+👉 [Vai direttamente alla cartella real-world →](https://github.com/Mugen85/CSharp-LINQPad-Training/tree/main/scripts/real-world)
+
 
 ---
 
@@ -88,12 +99,13 @@ Every file is tracked, documented, and automated. This repository includes:
 | Folder/File | Description |
 |-------------|-------------|
 | `/scripts/` | LINQPad `.linq` scripts |
+| `/scripts/real-world/` | Advanced and realistic scripts for real-world simulation |
 | `/docs/` | Markdown `.md` documentation for each exercise |
-| `/tools/ExportLinqToCsApp/` | C# console tool for converting `.linq → .cs` |
+| `/tools/ExportLinqToCsApp/` | C# tool to convert `.linq → .cs` |
 | `/github-view/` | Generated `.cs` files for GitHub preview |
 | `/demo/` | Animated GIFs showing script execution |
-| `.gitignore` | Excludes logs, binaries, temp files |
-| `conversione.log` | Log of conversions (not versioned) |
+| `.gitignore` | Excludes logs, binaries, and temp files |
+| `conversione.log` | Conversion log (not versioned) |
 
 ---
 
@@ -117,6 +129,15 @@ A C# console app that:
 
 - ✅ Well-formatted C# code: [github-view/](github-view)
 - 🛠️ Original LINQPad source scripts: [scripts/](scripts)
+
+---
+
+## 🚀 Real-world and advanced scripts
+
+🔍 The [`real-world`](scripts/real-world) subfolder includes the most realistic, complex, and job-relevant scripts.  
+Each example simulates a task that could be assigned in a real company setting.
+
+👉 [Go directly to the real-world folder →](https://github.com/Mugen85/CSharp-LINQPad-Training/tree/main/scripts/real-world)
 
 ---
 
